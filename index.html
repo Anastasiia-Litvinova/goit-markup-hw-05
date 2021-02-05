@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="hero-info">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="hero-button" type="button" title="Сделать заказ">Заказать услугу</button>
+                    <button class="hero-button" type="button" title="Сделать заказ" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
         </section>
@@ -119,15 +119,15 @@
                 <ul class="pictures-list">
                     <li class="pictures-list-item">
                         <img class="pictures-list-photo" src="./img/photo1.jpg" alt="Программист пишет код" width="370" height="294">
-                        <p class="pictures-list-text">Десктопные приложения</p>
+                        <p class="pictures-list-overlay">Десктопные приложения</p>
                     </li>
                     <li class="pictures-list-item">
                         <img class="pictures-list-photo" src="./img/photo2.jpg" alt="Дизайнеры разрабатывают интерфейс приложения" width="370" height="294">
-                        <p class="pictures-list-text">Мобильные приложения</p>
+                        <p class="pictures-list-overlay">Мобильные приложения</p>
                     </li>
                     <li class="pictures-list-item">
                         <img class="pictures-list-photo" src="./img/photo3.jpg" alt="Вебдизайнер работает с цветом на графическом планшете" width="370" height="294">
-                        <p class="pictures-list-text">Дизайнерские решения</p>
+                        <p class="pictures-list-overlay">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -401,6 +401,18 @@
 
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="btn-close-icon" width="11" height="11">
+                    <use href="./svg.opt/new-sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
